@@ -1,0 +1,46 @@
+.tarjeta-cancion {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-cancion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contenido-tarjeta {
+  margin-bottom: 15px;
+}
+
+.nombre-cancion {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.artista-cancion {
+  font-size: 0.95rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.enlace-youtube {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.enlace-youtube:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
