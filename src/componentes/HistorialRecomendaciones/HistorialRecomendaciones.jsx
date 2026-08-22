@@ -50,6 +50,12 @@ export default function HistorialRecomendaciones({ visible }) {
           ))}
         </ul>
       )}
+      
+      
     </div>
+    
   );
+
+        
+
 }

@@ -3,6 +3,7 @@ import FormulaEstadoAnimo from './componentes/FormulaEstadoAnimo/FormulaEstadoAn
 import ListaCanciones from './componentes/ListaCanciones/ListaCanciones';
 import HistorialRecomendaciones from './componentes/HistorialRecomendaciones/HistorialRecomendaciones';
 import { guardarRecomendacion } from './servicios/categoryStorage';
+import Footer from './componentes/Footer/Footer';
 import './App.css';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
       </div>
 
       <HistorialRecomendaciones visible={historialVisible} />
+      <Footer />
     </div>
   );
 }

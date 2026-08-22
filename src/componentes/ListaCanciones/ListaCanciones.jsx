@@ -57,7 +57,7 @@ export default function ListaCanciones({ canciones }) {
       
       {cancionesConEnlaces.length > 0 && (
         <>
-          <h2>Tus recomendaciones de acuerdo a tu estado de ánimo🎶</h2>
+          <h2>Tus recomendaciones de acuerdo a tu estado de ánimo</h2>
           <div className="grid-canciones">
             {cancionesConEnlaces.map((cancion, index) => (
               <TarjetaCancion

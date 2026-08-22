@@ -1,6 +1,6 @@
 .tarjeta-cancion {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: whitesmoke;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@
   display: inline-block;
   padding: 8px 16px;
   background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -44,3 +44,23 @@
 .enlace-youtube:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* @media (max-width: 600px) {
+  .tarjeta-cancion {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .nombre-cancion {
+    font-size: 1rem;
+  }
+
+  .artista-cancion {
+    font-size: 0.85rem;
+  }
+
+  .enlace-youtube {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+} */

@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    height: 100%;
+    width: 100%;
+    img{
+    width: 220px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+
+}
+    a:hover{
+        cursor: pointer;
+        background-color: #6366f1;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px){
+    img{
+        width: 150px;
+        height: 130px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    }
+}

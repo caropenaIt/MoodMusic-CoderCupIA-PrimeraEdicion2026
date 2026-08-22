@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const OPENROUTER_API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const OPENROUTER_BASE_URL = (import.meta.env.VITE_OPENROUTER_BASE_URL || 'https://openrouter.ai/api/v1').replace(/\/$/, '');
-const OPENROUTER_MODEL = import.meta.env.VITE_OPENROUTER_MODEL || 'openai/gpt-4o-mini';
+const OPENROUTER_MODEL = import.meta.env.VITE_OPENROUTER_MODEL || 'nvidia/nemotron-3-ultra-550b-a55b:free';
 
 const normalizarJSON = (texto) => {
   let textoLimpio = texto.trim();
@@ -35,7 +35,7 @@ export const generarRecomendaciones = async (estadoAnimo) => {
       throw new Error('VITE_OPENROUTER_API_KEY no está configurada correctamente en .env.local');
     }
 
-    const prompt = `Dame exactamente 6 recomendaciones de canciones para alguien que se siente "${estadoAnimo}".
+    const prompt = `Dame exactamente 12 recomendaciones de canciones para alguien que se siente "${estadoAnimo}".
 Responde SOLO con un JSON válido sin explicaciones adicionales ni markdown. Estructura exacta:
 {"canciones":[{"nombre":"Nombre Canción","artista":"Nombre Artista"},{"nombre":"Otra Canción","artista":"Otro Artista"}]}`;
 

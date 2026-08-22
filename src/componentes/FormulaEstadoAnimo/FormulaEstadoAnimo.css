@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 .formula-estado-animo {
   width: 100%;
   max-width: 420px;
@@ -9,6 +10,10 @@
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
+  gap: 15px;
+  h1{
+    color: whitesmoke;
+  }
 }
 
 .logo {
@@ -23,7 +28,6 @@
 .formula-estado-animo h1 {
   font-size: 2.2rem;
   margin: 0 0 1rem 0;
-  color: #333;
 }
 
 .instrucciones {
@@ -31,12 +35,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .instrucciones h4 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 .instrucciones ol {
@@ -44,8 +49,14 @@
   padding: 0;
   margin: 0;
   color: #333;
-  text-align: left;
-  display: inline-block;
+  text-align: center;
+  width:90vw;
+
+}
+
+ol li::marker {
+  color: rgb(0, 0, 228);
+  font-weight: bold;
 }
 
 .formula-estado-animo form {
@@ -57,13 +68,13 @@
 }
 
 .textarea-animo {
-  width: 100%;
+  width: 70vw;
   box-sizing: border-box;
   padding: 12px;
   border: 2px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: inherit;
+  font-family: "Nunito", sans-serif;
   resize: vertical;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -85,7 +96,7 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: #6366f1;
-  color: white;
+  color: whitesmoke;
   border: none;
   border-radius: 8px;
   cursor: pointer;
